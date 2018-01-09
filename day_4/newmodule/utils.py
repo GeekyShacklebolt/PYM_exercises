@@ -12,3 +12,19 @@ def list(path='.'):
         print(i,'')
 
 
+class test(object):
+    def __init__(self):
+        self.__mostprivate = "mostprivate"
+        self._semiprivate = "semiprivate"
+        self.public = "public"
+    def method(self):
+        return "this is an instance method"
+
+
+class test2(test):
+    def __init__(self):
+        test.__init__(self)
+        self.public2 = "public"
+        self._semiprivate2 = "semiprivate2"
+        self.__mostprivate2 = "mostprivate2"
+        

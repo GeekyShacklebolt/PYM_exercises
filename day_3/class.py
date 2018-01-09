@@ -133,3 +133,13 @@ print("Marks are : %d" % obj.marks)
 obj.marks = -20
 print("Status is : %s" % obj.result)
 
+# DECORATORS
+
+def shiva():
+    print("My name is shiva")
+
+@shiva
+def sub(a, b):
+    print(a - b)
+
+print(sub(7, 4))
